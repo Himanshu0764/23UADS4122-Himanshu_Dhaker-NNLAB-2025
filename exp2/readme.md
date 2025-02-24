@@ -9,7 +9,7 @@ This implementation follows a *multi-layer perceptron (MLP)* approach where:
 - Individual perceptrons are trained to recognize Boolean functions (e.g., NAND, custom functions).
 - The outputs of these perceptrons are then combined to train a final perceptron for binary classification.
 - The model is evaluated using *accuracy*.
-
+```
 ## Python Implementation
 
 python
@@ -63,7 +63,7 @@ final_X = np.column_stack([fun1_predictions, fun2_predictions, fun3_predictions,
 final_y = np.array([0, 1, 1, 0])
 
 final_predictions, actual_y = train_perceptron(final_X, final_y, "Final Perceptron")
-
+```
 ## Explanation of the Code
 
 ### Libraries Used
